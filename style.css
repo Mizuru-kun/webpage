@@ -1,0 +1,84 @@
+:root {
+    --czarny-background: #000000;
+    --primary-light: #303138;
+    --secondary: #ff3d3d;
+    --primary-text: #f0e9e9;
+    --text-light: #f9f9f9;
+}
+
+main .container {
+    width: 90vw;
+    margin: 0 auto;
+    border: 6px solid rgb(0, 0, 0);
+    position: fixed;
+    background-color: #ff3d3d;
+    height: 70px;
+}
+
+section {
+    width: 110vh;
+}
+
+main .container .nawigacja {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .nawigacja .naw-link {
+    margin-top: 20px;
+    color: var(--primary-text);
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-right: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+}
+
+main .container .nawigacja .naw-link:hover {
+    color: var(--secondary);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid var(--secondary);
+    ;
+}
+
+main .sekcja {
+    width: 91vw;
+    height: 60vh;
+    margin-top: 70px;
+    background-color: rgb(59, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .sekcja .user {
+    width: 80%;
+    border: 2px solid red;
+}
+
+main .sekcja .user .user--foto {
+    margin-top: 70px;
+    width: 150px;
+    height: 150px;
+}
+
+main .sekcja .user .user--foto img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 20px 20px;
+}
+
+main .sekcja .user .user--foto .user--foto--info {
+    width: 150px;
+    height: 150px;
+   
+}
+main .sekcja .user .user--foto .user--foto--info .p{
+    color: var(--primary-text);
+}
